@@ -4,19 +4,22 @@
   "description": "A function that determines if an array is an arithmetic or geometric progression",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run compile && mocha output/test.js",
+    "compile": "babel test --presets es2015 -d output"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Polymathwole/arit-geo.git"
+    "url": "git+https://github.com/Polymathwole/self-learning-day-0.git"
   },
   "author": "Oluwaremi Oluwole <oluwaremi.oluwole@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Polymathwole/arit-geo/issues"
+    "url": "https://github.com/Polymathwole/self-learning-day-0/issues"
   },
-  "homepage": "https://github.com/Polymathwole/arit-geo#readme",
+  "homepage": "https://github.com/Polymathwole/self-learning-day-0#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.2",
     "mocha": "^3.5.3"
   }

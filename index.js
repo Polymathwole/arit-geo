@@ -5,6 +5,9 @@ module.exports = {
 
         if (Array.isArray(listarg))
         {
+            if (typeof listarg[0]==="string")
+                return 'Array argument should not contain a string!'
+
             let prev, next;
             let diff = (listarg[1]-listarg[0]);
             let ratio = listarg[1]/listarg[0];
@@ -16,10 +19,17 @@ module.exports = {
             {
                 return 0;
             }
+            else if(listarg.length < 3)
+            {
+                return 'Minimum of three arguments required';
+            }
             else
             {
                 for (prev = 1, next = 2; isArith && next < listarg.length; prev++, next++)
                 {
+                    if (typeof listarg[prev]==="string"||typeof listarg[next]==="string")
+                        return 'Array argument should not contain a string!'
+
                     if (isArith && (listarg[next] - listarg[prev] !== diff))
                         isArith = false;
                     
@@ -44,7 +54,14 @@ module.exports = {
                 else
                     return -1;
             }
-        }		
+        }
+        else if(listarg===undefined)
+        {
+            return 'No argument provided';
+        }
+        else if (!Array.isArray(listarg))
+            return 'Argument is not an array';
+        	
 	}
 }
 
