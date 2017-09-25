@@ -64,5 +64,3 @@ module.exports = {
         	
 	}
 }
-
-console.log(module.exports.aritGeo([1,2,4]))
