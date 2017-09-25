@@ -1,0 +1,19 @@
+{
+  "name": "arit-geo",
+  "version": "0.0.1",
+  "description": "A function that determines if an array is an arithmetic or geometric progression",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polymathwole/arit-geo.git"
+  },
+  "author": "Oluwaremi Oluwole <oluwaremi.oluwole@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Polymathwole/arit-geo/issues"
+  },
+  "homepage": "https://github.com/Polymathwole/arit-geo#readme"
+}
